@@ -12,6 +12,7 @@ body{
 
 i {
     font-size:22px;
+    color:white;
     padding:0px;
 }
 
@@ -57,8 +58,114 @@ i {
 
 .header{
     display:grid;
-    width:100vw;
-    height:30%;
-    grid-template-rows: repeat(2,50%);
+    width:100%;
+    background-color: whitesmoke;
+}
+
+.header-top-row{
+    display:grid;
+    grid-template-columns: 60% 40%;
+}
+
+.header-top-row > i {
+    font-size:90px;
+}
+
+#bell,
+#search {
+    color:black;
+    font-size:22px;
+}
+
+#bell {
+    margin-left:50px;
+}
+
+.name,
+.hello{
+    font-weight: bold;
+}
+
+#name{
+    font-size:35px;
+    margin: -10px 0px 0px -5px;
+}
+
+.top-right{
+    display:grid;
+    grid-template-columns: repeat(2, 100px) 250px;
+    align-items: center;
+    margin-left:150px;
+}
+
+.profile-pic{
+    height:100px;
+    border-radius: 50%;
+}
+
+#profile-pic-small {
+    height:85px;
+}
+
+.main-content-container {
+    display:grid;
+    grid-template-rows: 25vh 75vh;
+}
+
+.body {
+    display:grid;
+    grid-template-columns: 65vw 20vw;
+    background-color:lightgrey;
+}
+
+.right-sidebar{
+    display:grid;
+    grid-template-rows: repeat(2, 50%);
+    background-color: yellow;
+}
+
+.search {
+    padding:20px 60px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+#search-bar {
+    outline: none;
+    border: none;
+    border-radius: 9px;
+    height:30px;
+    width:45vw;
     background-color: lightgrey;
+
+}
+
+.header-bottom-row{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.left-bottom-header{
+    display:grid;
+    grid-template-columns:repeat(2, 125px);
+    margin:0px 0px 25px 100px;
+    align-items: center;
+}
+
+.right-bottom-header{
+    display:grid;
+    grid-template-columns: repeat(3, 150px);
+    margin-right:100px;
+}
+
+button {
+    color:white;
+    background-color:#0789fa;
+    border:none;
+    height:50px;
+    width:125px;
+    font-weight:bold;
+    border-radius: 20px;
 }
