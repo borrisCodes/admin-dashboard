@@ -4,6 +4,8 @@
 
 body{
     display:flex;
+    height:100%;
+    min-height: 100%;
 }
 
 .dashboard{
@@ -34,8 +36,8 @@ i {
     font-weight:bold;
     row-gap:100px;
     color:white;
-    width:15%;
-    height:100vh;
+    width:50vw;
+    min-height: 114.9vh;
     font-size:19px;
 }
 
@@ -59,6 +61,7 @@ i {
 .header{
     display:grid;
     width:100%;
+    margin: 0px 0px -45px 0px;
     background-color: whitesmoke;
 }
 
@@ -115,7 +118,9 @@ i {
 
 .body {
     display:grid;
-    grid-template-columns: 65vw 20vw;
+    height:85vh;
+    padding: 45px 0px 0px 0px;
+    grid-template-columns: 60vw 20vw;
     background-color:rgba(211, 211, 211, 0.842);
 }
 
@@ -126,6 +131,8 @@ i {
 }
 
 .grid-container{
+    height:250px;
+    width:90%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -133,7 +140,9 @@ i {
 
 .right-sidebar{
     display:grid;
-    grid-template-rows: repeat(2, 50%);
+    margin: 0px 0px -50px 0px;
+    height:780px;
+    grid-template-rows: repeat(2, 43%);
 }
 
 .search {
@@ -155,6 +164,7 @@ i {
 
 .header-bottom-row{
     display:flex;
+    margin:-30px 0px 0px 0px;
     align-items: center;
     justify-content:space-between;
 }
@@ -182,9 +192,19 @@ button {
     border-radius: 20px;
 }
 
-.title {
-    font-size:20px;
-    font-weight:bold;
+.title,
+.your-projects {
+    font-size:19px;
+    font-weight:lighter;
+}
+
+.your-projects {
+    position:absolute;
+    margin: -20px 0px -100px 50px;
+}
+
+.title-holder{
+    width:60vw;
 }
 
 .grid-content {
@@ -193,7 +213,7 @@ button {
     padding-left:20px;
     flex-direction: column;
     width:75%;
-    height:85%;
+    height:80%;
     border:2px solid #ffffff;
     border-left: 8px solid orange;
     border-radius:10px;
@@ -217,4 +237,52 @@ button {
 
 .grid-content > p {
     height:100px;
+    color:rgb(95, 82, 82);
+}
+
+.announcements-holder{
+    padding:0px 20px 80px 20px;
+    background-color: white;
+    height:68%;
+    border:2px solid white;
+    border-radius: 10px;
+    width:80%;
+}
+
+.announcement {
+    border-bottom:2px solid lightgrey;
+}
+
+.announcements {
+    position:relative;
+    bottom:30px;
+    height:350px;
+}
+
+h2 {
+    font-size:20px;
+}
+
+.trending-holder{
+    background-color: white;
+    width:82%;
+    height:350px;
+    padding:25px 0px 0px 30px;
+    margin:0px 0px -80px 0px;
+    border:2px solid white;
+    border-radius: 10px;
+}
+
+.trending-person > img {
+    height:60px;
+    border-radius: 50%;
+}
+
+.trending-person {
+    display:grid;
+    grid-template-columns: repeat(3, 100px);
+}
+
+.username-holder{
+    width:200px;
 }
